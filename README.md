@@ -2,7 +2,7 @@
 
 [![updated](https://img.shields.io/github/last-commit/threatify/resolvers?label=updated&style=flat-square)](https://github.com/threatify/resolvers/commits/main)
 [![resolvers](https://img.shields.io/badge/resolvers-19,574-2ea44f?style=flat-square)](resolvers.txt)
-[![license](https://img.shields.io/github/license/threatify/resolvers?style=flat-square)](LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
 Public DNS resolvers that answer correctly, re-validated every day.
 **19,574** resolvers passed on 2026-11-01.
