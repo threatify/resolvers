@@ -1,11 +1,11 @@
 # resolvers
 
 [![updated](https://img.shields.io/github/last-commit/threatify/resolvers?label=updated&style=flat-square)](https://github.com/threatify/resolvers/commits/main)
-[![resolvers](https://img.shields.io/badge/resolvers-19,574-2ea44f?style=flat-square)](resolvers.txt)
+[![resolvers](https://img.shields.io/badge/resolvers-18,116-2ea44f?style=flat-square)](resolvers.txt)
 [![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
-Public DNS resolvers that answer correctly, re-validated every day.
-**19,574** resolvers passed on 2026-11-01.
+Public DNS resolvers that answer correctly, re-validated every 6 hours.
+**18,116** resolvers passed in the run of 2026-11-02 21:27 UTC.
 
 Made for subdomain enumeration with [puredns](https://github.com/d3mondev/puredns),
 [massdns](https://github.com/blechschmidt/massdns), [shuffledns](https://github.com/projectdiscovery/shuffledns),
@@ -26,7 +26,7 @@ massdns -r resolvers.txt -t A -o S -w results.txt names.txt
 
 | File | Contents |
 |------|----------|
-| [`resolvers.txt`](resolvers.txt) | Every resolver that passed today. One IPv4 address per line, sorted. |
+| [`resolvers.txt`](resolvers.txt) | Every resolver that passed the latest run. One IPv4 address per line, sorted. |
 | [`resolvers-trusted.txt`](resolvers-trusted.txt) | Large anycast resolvers that do not filter answers (Cloudflare, Google, Quad9 unsecured, Control D unfiltered, Hurricane Electric), for confirming results. |
 
 Both files are replaced in full on every update.
@@ -47,8 +47,8 @@ get every answer right:
 - **No filtering services.** Known filtering resolvers (family, malware and ad-blocking
   services) are left out, since they can hide hosts on purpose.
 
-A resolver that times out is retried once, then dropped. Today's list only has resolvers
-that passed today.
+A resolver that times out is retried once, then dropped. The list only has resolvers that
+passed the latest run.
 
 ## Notes
 
@@ -56,3 +56,10 @@ that passed today.
 - Passing from our checkers does not guarantee a resolver answers your network: some
   rate-limit or block ranges. Keep your tool's retries and rate limits on.
 - Use these resolvers only for testing that you are authorized to do.
+
+## Disclaimer
+
+These lists are provided "as is", without warranty of any kind, under the [MIT License](LICENSE).
+Resolvers are third-party servers we do not run: they can change, go down or start filtering at
+any time. You are responsible for how you use them. The authors are not liable for any misuse or
+damage.
