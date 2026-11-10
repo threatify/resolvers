@@ -1,11 +1,11 @@
 # resolvers
 
 [![updated](https://img.shields.io/github/last-commit/threatify/resolvers?label=updated&style=flat-square)](https://github.com/threatify/resolvers/commits/main)
-[![resolvers](https://img.shields.io/badge/resolvers-18,448-2ea44f?style=flat-square)](resolvers.txt)
+[![resolvers](https://img.shields.io/badge/resolvers-18,391-2ea44f?style=flat-square)](resolvers.txt)
 [![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
 Public DNS resolvers that answer correctly, re-validated every 6 hours.
-**18,448** resolvers passed in the run of 2026-11-09 22:26 UTC.
+**18,391** resolvers passed in the run of 2026-11-10 05:54 UTC.
 
 Made for subdomain enumeration with [puredns](https://github.com/d3mondev/puredns),
 [massdns](https://github.com/blechschmidt/massdns), [shuffledns](https://github.com/projectdiscovery/shuffledns),
